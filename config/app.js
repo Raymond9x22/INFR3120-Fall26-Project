@@ -9,6 +9,15 @@ let usersRouter = require('../routes/users');
 
 let app = express();
 
+const mongoose = require('mongoose');
+let DB = require('./db');
+mongoose.connect(DB.URI);
+let mongoDB = mongoose.connection;
+mongoDB.on('error', console.error.bind(console, 'Connection Error'));
+mongoDB.once('open', () => {
+  console.log('Connected to MongoDB Atlas');
+});
+
 // view engine setup
 app.set('views', path.join(__dirname, '../views'));
 app.set('view engine', 'ejs');
