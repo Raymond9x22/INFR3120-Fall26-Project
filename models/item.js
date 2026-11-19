@@ -1,12 +1,12 @@
 let mongoose = require('mongoose');
 
 let itemModel = mongoose.Schema({
-  itemName: String,
+  itemName: { type: String, required: true },
   description: String,
-  status: String,     // "Lost" or "Found"
-  location: String,
-  date: Date,
-  contact: String
+  status: { type: String, required: true, enum: ['Lost', 'Found'] },
+  location: { type: String, required: true },
+  date: { type: Date, default: Date.now },
+  contact: { type: String, required: true }
 },
 {
   collection: "items"
