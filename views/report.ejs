@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5" style="max-width: 600px;">
+    <h1 class="mb-4">Report an Item</h1>
+
+    <form method="POST" action="/report">
+
+      <div class="mb-3">
+        <label class="form-label">Item Name</label>
+        <input type="text" class="form-control" name="itemName" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Description</label>
+        <textarea class="form-control" name="description" rows="3"></textarea>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Lost or Found?</label>
+        <select class="form-select" name="status" required>
+          <option value="Lost">Lost</option>
+          <option value="Found">Found</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Location</label>
+        <input type="text" class="form-control" name="location" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Date</label>
+        <input type="date" class="form-control" name="date" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Contact (email or phone)</label>
+        <input type="text" class="form-control" name="contact" required>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
