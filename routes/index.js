@@ -1,9 +1,17 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
+const Item = require('../models/item'); // Import the Item model
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+// Our Home page
+router.get('/', function (req, res, next) {
+  Item.find()
+    .sort({ date: -1 })
+    .then(function (items) {
+      res.render('index', { title: 'FoundIt', items: items });
+    })
+    .catch(function (err) {
+      next(err);
+    });
 });
 
 module.exports = router;
