@@ -2,7 +2,10 @@
 
 INFR 3120 Fall 2026 Group Project - Part 1 (First Release) - Group 10
 
-**Team:** Raymond, Teme, Jerin
+**Team members:**
+- Raymond (Man Hin) Wong
+- Temesgen Teklebrhan
+- Jerin Muthalakuzhiyil
 
 **Live site:** (https://foundit-tg5r.onrender.com/)
 
@@ -18,8 +21,8 @@ FoundIt is an online Lost & Found board for our campus. Anyone who lost or found
 | Member | Part |
 |---|---|
 | Teme | Express project setup (server.js, config folder), MongoDB Atlas connection with mongoose and dotenv, Item model, Report form and GET/POST report routes |
-| Jerin | Landing page layout (views/index.ejs) and the index route that loads the items with Item.find() |
-| Raymond | GitHub repo and collaborators, team logo, project plan document, README |
+| Jerin | Landing page layout (views/index.ejs) and the index route that loads the items with Item.find() Render deployment (web service, MONGO_URI environment variable, live link) |
+| Raymond | GitHub repo and collaborators, team logo, header and footer partials (views/partials) used on both pages, date display fix, project plan document, README |
 
 ## How to run it
 1. `git clone` this repo and `cd` into the folder
