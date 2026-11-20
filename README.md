@@ -22,7 +22,7 @@ FoundIt is an online Lost & Found board for our campus. Anyone who lost or found
 |---|---|
 | Teme | Express project setup (server.js, config folder), MongoDB Atlas connection with mongoose and dotenv, Item model, Report form and GET/POST report routes |
 | Jerin | Landing page layout (views/index.ejs) and the index route that loads the items with Item.find() Render deployment (web service, MONGO_URI environment variable, live link) |
-| Raymond | GitHub repo and collaborators, team logo, header and footer partials (views/partials) used on both pages, date display fix, project plan document, README |
+| Raymond | GitHub repo and collaborators, team logo, header and footer partials (views/partials) used on both pages, project plan document, README |
 
 ## How to run it
 1. `git clone` this repo and `cd` into the folder
