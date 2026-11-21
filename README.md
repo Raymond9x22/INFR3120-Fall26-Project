@@ -34,3 +34,9 @@ The `.env` file is in `.gitignore`, so our database password is never pushed to 
 
 ## Built with
 Node.js, Express, EJS, Bootstrap 5, Font Awesome, MongoDB Atlas, Mongoose, dotenv, Render
+
+## Sources
+- Lecture code from INFR3120 (CRUD Part 1: Mongoose connection, model and routes; Express Generator setup)
+- Bootstrap 5 and Font Awesome, loaded from CDN (getbootstrap.com, fontawesome.com)
+- Mongoose docs for schema validation (required, enum, default): https://mongoosejs.com/docs/validation.html
+- AI use: Fixing errors.

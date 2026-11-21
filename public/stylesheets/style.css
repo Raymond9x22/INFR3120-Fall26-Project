@@ -11,3 +11,12 @@ footer.mt-5 {
 a {
   color: #00B7FF;
 }
+.form-label {
+  font-size: 1.15rem;
+}
+
+.form-control,
+.form-select {
+  font-size: 1.15rem;
+  padding: 10px 14px;
+}
